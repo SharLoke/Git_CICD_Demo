@@ -1,6 +1,23 @@
-def predict_label(value):
-    """A tiny example function for CI testing."""
-    return "positive" if value >= 0.5 else "negative"
+def add(a, b):
+    return a + b
+
+
+def subtract(a, b):
+    return a - b
+
+
+def multiply(a, b):
+    return a * b
+
+
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
+
 
 if __name__ == "__main__":
-    print("Prediction:", predict_label(0.8))
+    print("Addition:", add(10, 5))
+    print("Subtraction:", subtract(10, 5))
+    print("Multiplication:", multiply(10, 5))
+    print("Division:", divide(10, 5))
